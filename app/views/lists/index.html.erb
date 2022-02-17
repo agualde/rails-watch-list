@@ -1,0 +1,18 @@
+<div class="banner"><h1>Our Collections</h1></div>
+
+    <div class="container">
+<div class="cards">
+      <div class="row">
+  <% @lists.each do |list| %>
+        <div class="col-6 mt-5">
+          <div class="my-card" style=" background-image: url('https://picsum.photos/2000/3000?<%= rand(1..500) %>'); display: flex">
+            <ul>
+              <li><%= link_to list.name, list_path(list), class: "btn", style: "padding: 0;" %></li>
+            </ul>
+          </div>
+        </div>
+  <% end %>
+      </div>
+    </div>
+</div>
+<p><%= link_to "Add a list!", new_list_path %></p>
