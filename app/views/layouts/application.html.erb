@@ -5,31 +5,26 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%# Google fonts links %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <%# Roboto import, Sans Serif %>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-<%#
-    <div class="container">
-      <div class="row">
-
-        <div class="col-m-4">
+    <div class="nav-bar">
+      <div class="nav-bar-contents navbar navbar-default navbar-static-top">
+        <div id="pop-corn"><%= link_to "🍿", lists_path %></div>
+        <div class="links">
+          <%= link_to "My Lists", lists_path, class: "btn" %>
+          <%= link_to "New List", new_list_path, class: "btn" %>
         </div>
-
-        <div class="col-m-4 mt-5"> %>
-          <%= yield %>
-        <%# </div>
-
-        <div class="col-m-4">
-        </div>
-
       </div>
-    </div> %>
-
-
-
-
+    </div>
+      <%= yield %>
   </body>
 </html>

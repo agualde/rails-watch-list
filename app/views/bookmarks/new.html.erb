@@ -1,7 +1,17 @@
-<h1>Add a movie to your list</h1>
+<div class="container">
+  <div class="row">
+    <div class="col col-m-4">
+    </div>
+    <div class="col col-m-4 mt-5">
+      <h1>Add a movie to your list</h1>
 
-<%= simple_form_for [@list, @bookmark] do |f| %>
-<%= f.input :comment %>
-<%= f.association :movie, prompt: 'Select a movie' %>
-<%= f.submit "Submit", class: 'btn' %>
-<% end %>
+      <%= simple_form_for [@list, @bookmark] do |f| %>
+      <%= f.input :comment %>
+      <%= f.association :movie, prompt: 'Select a movie' %>
+      <%= f.submit "Submit", class: 'btn btn-primary mt-3' %>
+      <% end %>
+    </div>
+     <div class="col col-m-4">
+     </div>
+  </div>
+</div>

@@ -2,7 +2,8 @@
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  width: 500px;
+  width: auto;
+  border-radius: 2px;
 }
 
 .card-trip > img {
@@ -25,12 +26,15 @@
 
 
 .card-trip .card-trip-infos {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
-  flex-direction: column;
+  padding: 24px;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: flex-end;
+  // position: relative;
+  // flex-direction: column;
+ #card-title {
+    border-bottom: 1px solid #8080803d;
+  }
 }
 
 
@@ -40,18 +44,55 @@
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  height: 500px;
+  height: 200px;
+  width: 350px;
   justify-content: center;
   padding-top: 100px;
   margin-bottom: 100px;
   margin-top: 10px;
-  border-radius: 6px;
-  box-shadow: 3px 3px 4px grey;
+  border-radius: 2px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+  img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    backdrop-filter: grayscale(100%);
+  }
 }
 
-
+#list-title {
+  margin-left: 45px;
+}
 
 .cards {
+  display: flex;
+  justify-content: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.color-white {
+  color: white;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-bottom-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .text-small {
+    font-size: 13px;
+  }
+}
+
+.center {
   display: flex;
   justify-content: center;
 }

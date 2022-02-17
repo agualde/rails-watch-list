@@ -1,12 +1,33 @@
-.navbar-lewagon {
-  justify-content: space-between;
+.nav-bar {
   background: white;
+  height: auto;
+  position: sticky;
+  top: 0px;
+
 }
 
-.navbar-lewagon .navbar-collapse {
+.nav-bar .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.nav-bar .navbar-brand img {
   width: 40px;
 }
+
+.nav-bar-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .links {
+    margin-right: 45px;
+  }
+}
+
+#pop-corn {
+  font-size: 35px;
+  margin-left: 45px;
+    a{
+    text-decoration: none;
+    }
+  }

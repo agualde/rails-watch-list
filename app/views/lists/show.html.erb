@@ -1,34 +1,40 @@
-<h1><%= @list.name %></h1>
+<div class="banner-show" style="background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80');"><h1 class="bold"><%= @list.name %></h1></div>
+
+
+
+<h1 class="mt-4"></h1>
 
 
 
 
 
 <div class="container">
+
+  <div id="add-movie-btn"><%= link_to "add a movie", new_list_bookmark_path(@list), class: "btn btn-success color-white" %></div>
   <div class="row justify-content-center">
 
 
     <% @list.movies.each do |movie| %>
-      <div class="col">
-        <div class="card-trip">
+      <div class="col-4 mt-5">
+        <div class="card-trip mb-5">
             <%= image_tag movie.poster_url, class: "poster" %>
-            <div class="card-trip-infos">
+          <div class="card-trip-infos">
             <div>
-            <h2><%= movie.title %></h2>
-            <p><%= movie.overview %></p>
+              <h2 class="mt-2 mb-2" id="card-title"><%= movie.title %></h2>
+              <p class="mt-2"><%= movie.overview %></p>
             </div>
-            <div>
-            <h2 class="card-trip-pricing"><%= '⭐' * movie.rating.round  %> </h2>
-            <%= link_to "Delete", bookmark_path(movie), method: :delete, style: "color: red;" %>
-          </div>
+              <div class="card-bottom mb-2 mt-2">
+                <div class="card-bottom-left">
+                  <span class="comment p-3"><%= movie.bookmarks.last.comment %></span>
+                </div>
+                <div class="card-bottom-right">
+                  <h2 class="card-trip-pricing mt-2"><%= '⭐' * movie.rating.round  %> </h2>
+                  <%= link_to "Delete", bookmark_path(movie), method: :delete, style: "color: red;", class: "mt-2 text-small" %>
+                </div>
+            </div>
           </div>
         </div>
       </div>
     <% end %>
   </div>
 </div>
-
-
-
-
-<%= link_to "Add a movie!", new_list_bookmark_path(@list) %>
