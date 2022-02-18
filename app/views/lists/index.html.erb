@@ -9,7 +9,7 @@
   </div>
 
   <div class="row">
-    <% List.all.each do |list| %>
+    <% @list.each do |list| %>
       <div class="col-lg-4 col-sm-12 center">
           <div class="my-card" style=" background-image: url('https://picsum.photos/2000/3000?<%= rand(1..500) %>'); display: flex">
               <%= link_to list.name, list_path(list), class: "btn bold color-white", style: "padding: 0;" %>
