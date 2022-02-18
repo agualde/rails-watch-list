@@ -1,5 +1,5 @@
 .banner {
-  height: 55vh;
+  height: 35vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -28,13 +28,13 @@ ul {
 
 .banner-show {
   height: 35vh;
-  display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   backdrop-filter: blur(10px);
   background-position: center;
   margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
 
 
   h1, h2 {
@@ -47,4 +47,14 @@ ul {
 
 .shadow {
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.btn-wrap {
+  height: 50%;
+  align-self: end;
+  margin-right: 45px;
+}
+
+.banner-btn-kill {
+  cursor: default;
 }
