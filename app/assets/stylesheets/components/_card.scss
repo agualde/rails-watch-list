@@ -108,10 +108,35 @@
 }
 
 
-.kill-link {
+.kill-decoration {
   text-decoration: none;
+}
+
+.kill-grabber{
+  cursor: default;
 }
 
 .overflow-scroll {
   overflow: scroll;
 }
+
+.back-btn {
+  margin-left: 45px;
+}
+
+.black {
+  color: black;
+}
+
+#back-btn:hover {
+  color: black;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.ms-4 {
+  margin: 0 90px;
+}
+

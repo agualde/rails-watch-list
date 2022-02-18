@@ -6,8 +6,8 @@
       <h1>Add a movie to your list</h1>
 
       <%= simple_form_for [@list, @bookmark] do |f| %>
-      <%= f.input :comment %>
       <%= f.association :movie, prompt: 'Select a movie' %>
+      <%= f.input :comment, as: :text %>
       <%= f.submit "Submit", class: 'btn btn-primary mt-3' %>
       <% end %>
     </div>
