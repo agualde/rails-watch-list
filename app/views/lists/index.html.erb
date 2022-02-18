@@ -2,15 +2,15 @@
 
 <div class="container">
   <div class="row">
-    <div class="col above-lists-contents mt-3 mb-3">
-      <h2 class="mt-3" id="list-title">My lists</h2>
+    <div class="above-lists-contents mt-3 mb-3">
+      <h2 class="" id="list-title">My lists</h2>
       <p id="add-list-btn"><%= link_to "Create a movie list", new_list_path, class:"btn btn-success color-white"%></p>
     </div>
   </div>
 
   <div class="row">
     <% @lists.each do |list| %>
-      <div class="col-lg-4 col-sm-12 mt-5 center">
+      <div class="col-lg-4 col-sm-12 center">
           <div class="my-card" style=" background-image: url('https://picsum.photos/2000/3000?<%= rand(1..500) %>'); display: flex">
               <%= link_to list.name, list_path(list), class: "btn bold color-white", style: "padding: 0;" %>
           </div>
