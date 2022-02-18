@@ -1,0 +1,30 @@
+.footer {
+  background: black;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-bar .navbar-collapse {
+  flex-grow: 0;
+}
+
+.footer-contents {
+
+  .links {
+    margin-right: -13px;
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.container {
+  height: 100vh;
+}
