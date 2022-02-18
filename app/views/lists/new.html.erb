@@ -1,17 +1,20 @@
 <div class="container">
   <div class="row">
+
     <div class="col col-m-4">
     </div>
+
     <div class="col col-m-4 mt-5">
       <h1>Add a list</h1>
 
       <%= simple_form_for [@list] do |f| %>
       <%= f.input :name %>
-      <%= f.input :name, as: :file, label: "Background"%>
       <%= f.button :submit, "Finished", class: "btn btn-primary mt-3" %>
       <% end %>
     </div>
+
      <div class="col col-m-4">
      </div>
+
   </div>
 </div>

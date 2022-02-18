@@ -19,7 +19,7 @@
           <div class="card-trip-infos">
             <div>
               <h2 class="mt-2 mb-2" id="card-title"><%= bookmark.movie.title %></h2>
-              <p class="mt-2"><%= bookmark.movie.overview %></p>
+              <p class="overflow-scroll mt-2"><%= bookmark.movie.overview %></p>
             </div>
               <div class="card-bottom mb-2 mt-2">
                 <div class="card-bottom-left">
@@ -27,7 +27,7 @@
                 </div>
                 <div class="card-bottom-right">
                   <h2 class="card-trip-pricing mt-2"><%= '⭐' * bookmark.movie.rating.round  %> </h2>
-                  <%= link_to "Delete", bookmark_path(bookmark.id), method: :delete, style: "color: red;", class: "mt-2 text-small" %>
+                  <%= link_to "Delete", bookmark_path(bookmark.id), method: :delete, style: "color: red;",class: "mt-2 text-small kill-link" %>
                 </div>
             </div>
           </div>
