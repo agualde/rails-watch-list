@@ -2,7 +2,7 @@
 display: flex;
 justify-content: flex-end;
 margin: auto;
-margin-left: 35px;
+padding-right: 45px;
 
   @media (max-width: 480px) {
     margin-left: 0px;
@@ -31,4 +31,12 @@ margin-right: 45px;
   @media (max-width: 480px) {
     margin-left: 0px;
   }
+}
+
+.kill-decoration {
+  text-decoration: none;
+}
+
+.kill-grabber {
+  cursor: default;
 }
