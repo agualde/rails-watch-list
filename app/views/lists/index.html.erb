@@ -4,7 +4,7 @@
   <div class="row above-lists-contents mt-3 mb-3">
     <%# <div class="above-lists-contents mt-3 mb-3"> %>
       <%# <h2 class="btn kill-decoration kill-grabber" id="list-title">my lists</h2> %>
-      <p id="add-list-btn"><%= link_to "Create a movie list", new_list_path, class:"btn btn-success white mt-3 mb-3"%></p>
+      <p id="add-list-btn"><%= link_to "Create a movie list", new_list_path, class:"btn btn-success white mt-3 mb-3 lighter"%></p>
     <%# </div> %>
   </div>
 
@@ -12,7 +12,7 @@
     <% @lists.each do |list| %>
       <div class="col-lg-4 col-md-4 col-sm-12 center">
           <div class="my-card" style=" background-image: url('https://picsum.photos/2000/3000?<%= rand(1..500) %>'); display: flex">
-              <div><%= link_to list.name.capitalize, list_path(list), class: "btn bold color-white index-shadow", style: "padding: 0;" %></div>
+              <div><%= link_to list.name.capitalize, list_path(list), class: "btn color-white index-shadow", style: "padding: 0;" %></div>
           </div>
       </div>
     <% end %>
