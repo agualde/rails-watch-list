@@ -14,7 +14,7 @@
     <div id="add-movie-btn"><%= link_to "add a movie", new_list_bookmark_path(@list), class: "btn btn-success color-white" %></div>
   </div>
    <div class="row justify-content-center">
-    <div class="if-no-movie"><p style="text-align: center;<%= @list.movies.count == 0 ? 'height: 50vh; display: flex; align-items: center; justify-content: center;' : '' %>"><%= @list.movies.count == 0 ? 'Wanna add a movie?' : ''%></p></div>
+    <div class="if-no-movie"><p style="text-align: center;<%= @list.movies.count == 0 ? 'height: 50vh; display: flex; align-items: center; justify-content: center;' : '' %>"><%= @list.movies.count == 0 ? 'Wannnag add a movie?' : ''%></p></div>
     <% @list.bookmarks.each do |bookmark| %>
       <div class="col col-md-4 -col-lg-4 mt-5">
         <div class="card-trip mb-5">
