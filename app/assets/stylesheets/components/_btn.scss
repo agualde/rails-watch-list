@@ -1,10 +1,14 @@
 #add-list-btn {
 display: flex;
-justify-content: flex-start;
+justify-content: flex-end;
 margin: auto;
 margin-left: 35px;
 
   @media (max-width: 480px) {
+    margin-left: 0px;
+    justify-content: center;
+  }
+  @media (max-width: 768px) {
     margin-left: 0px;
     justify-content: center;
   }
