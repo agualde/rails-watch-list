@@ -16,7 +16,7 @@
    <div class="row justify-content-center">
     <div class="if-no-movie"><p style="text-align: center;<%= @list.movies.count == 0 ? 'height: 50vh; display: flex; align-items: center; justify-content: center;' : '' %>"><%= @list.movies.count == 0 ? 'Wanna add a movie?' : ''%></p></div>
     <% @list.bookmarks.each do |bookmark| %>
-      <div class="col col-lg-4 mt-5">
+      <div class="col col-md-4 -col-lg-4 mt-5">
         <div class="card-trip mb-5">
             <%= image_tag bookmark.movie.poster_url, class: "poster" %>
           <div class="card-trip-infos">
