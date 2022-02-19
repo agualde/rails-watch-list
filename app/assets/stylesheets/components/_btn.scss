@@ -3,6 +3,11 @@ display: flex;
 justify-content: flex-end;
 margin: auto;
 margin-right: 45px;
+
+  @media (max-width: 480px) {
+    margin-right: 0px;
+  }
+
 }
 
 
@@ -10,4 +15,16 @@ margin-right: 45px;
 display: flex;
 justify-content: flex-end;
 margin-right: 45px;
+
+  @media (max-width: 480px) {
+    margin-right: 0px;
+  }
+
+}
+
+.back-btn {
+  margin-left: 45px;
+  @media (max-width: 480px) {
+    margin-left: 0px;
+  }
 }

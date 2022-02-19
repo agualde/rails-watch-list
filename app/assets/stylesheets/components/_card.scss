@@ -59,6 +59,9 @@
 
 #list-title {
   margin-left: 45px;
+  @media (max-width: 480px) {
+    margin-left: 0px;
+  }
 }
 
 .cards {
@@ -109,10 +112,6 @@
 
 .overflow-scroll {
   overflow: scroll;
-}
-
-.back-btn {
-  margin-left: 45px;
 }
 
 .black {
