@@ -5,11 +5,11 @@ margin: auto;
 padding-right: 45px;
 
   @media (max-width: 480px) {
-    margin-left: 0px;
+    padding-right: 0px;
     justify-content: center;
   }
   @media (max-width: 768px) {
-    margin-left: 0px;
+    padding-right: 0px;
     justify-content: center;
   }
 }
