@@ -12,7 +12,7 @@
 
 <div class="container">
   <div class="above-lists-contents mt-3 mb-3">
-    <div class="back-btn"><%= link_to "⬅ back", lists_path, class: "btn back-btn-txt kill-decoration black lighter", id: "back-btn" %></div>
+    <div class="back-btn"><a href="/lists" class = "btn back-btn-txt kill-decoration black lighter", id = "back-btn"><i class="fa-solid fa-angles-left"></i></a></div>
     <div id="add-movie-btn"><%= link_to "add a movie", new_list_bookmark_path(@list), class: "btn btn-success color-white lighter" %></div>
   </div>
    <div class="row justify-content-center">
