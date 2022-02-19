@@ -9,6 +9,16 @@
   </div>
 
   <div class="row">
+
+    <div class="if-no-movie">
+      <p style="text-align: center;<%= @lists.count == 0 ? 'height: 50vh; display: flex; align-items: center; justify-content: center;' : '' %>">
+      <% if @lists.count == (0) %>
+      <a href="/lists/new" class="btn">Wanna add a list?</a>
+      <% else %>
+      <% end %>
+      </p>
+    </div>
+
     <% @lists.each do |list| %>
       <div class="col-lg-4 col-md-4 col-sm-12 center">
           <div class="my-card" style=" background-image: url('https://picsum.photos/2000/3000?<%= rand(1..500) %>'); display: flex">
