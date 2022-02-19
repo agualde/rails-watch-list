@@ -3,14 +3,14 @@
     <div class="col-md-4">
     </div>
     <div class="col col-md-4 mt-5">
-      <h1>Add a movie to your list</h1>
+      <h1 class="mb-3">Add a movie to your list</h1>
 
       <%= simple_form_for [@list, @bookmark] do |f| %>
       <%= f.association :movie, prompt: 'Select a movie' %>
       <%= f.input :comment, as: :text %>
       <%= f.submit "Submit", class: 'btn btn-primary mt-3' %>
       <% end %>
-      <%= link_to "cancel", list_path(@list), class: "btn kill-link kill-decoration", id: "cancel-link" %>
+      <%= link_to "cancel", list_path(@list), class: "btn kill-link kill-decoration", id: "cancel-form" %>
     </div>
      <div class="col-md-4">
      </div>
