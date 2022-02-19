@@ -1,18 +1,18 @@
 <div class="banner shadow" style="background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80');"><h1 class="pb-3">Save any kind of movies</h1><h2 class="mt-0">Classic</h2></div>
 
 <div class="container">
-  <div class="row">
-    <div class="above-lists-contents mt-3 mb-3">
-      <h2 class="btn kill-decoration kill-grabber" id="list-title">my lists</h2>
-      <p id="add-list-btn"><%= link_to "Create a movie list", new_list_path, class:"btn btn-success color-white"%></p>
-    </div>
+  <div class="row above-lists-contents">
+    <%# <div class="above-lists-contents mt-3 mb-3"> %>
+      <%# <h2 class="btn kill-decoration kill-grabber" id="list-title">my lists</h2> %>
+      <p id="add-list-btn"><%= link_to "Create a movie list", new_list_path, class:"btn btn-success color-white mt-3 mb-3"%></p>
+    <%# </div> %>
   </div>
 
   <div class="row">
     <% @lists.each do |list| %>
       <div class="col-lg-4 col-sm-12 center">
           <div class="my-card" style=" background-image: url('https://picsum.photos/2000/3000?<%= rand(1..500) %>'); display: flex">
-              <%= link_to list.name, list_path(list), class: "btn bold color-white", style: "padding: 0;" %>
+              <div><%= link_to list.name, list_path(list), class: "btn bold color-white", style: "padding: 0;" %></div>
           </div>
       </div>
     <% end %>

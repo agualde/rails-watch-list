@@ -100,7 +100,6 @@
 
 .above-lists {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -118,6 +117,10 @@
   color: black;
 }
 
+.white {
+  color: white;
+}
+
 #back-btn:hover {
   color: black;
 }
@@ -129,3 +132,7 @@
 .ms-4 {
   margin: 0 90px;
 }
+
+
+
+// justify-content: flex-start;
