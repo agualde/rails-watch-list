@@ -8,12 +8,18 @@
   margin-bottom: 25px;
   background-size: cover;
 
+  @media (max-width: 480px) {
+    justify-content: flex-start;
+  }
 
   h1, h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
-    padding-bottom: 40px;
     color: white;
+    padding-top: 100px;
+    @media (max-width: 480px) {
+      padding-top: 150px;
+  }
   }
 }
 
