@@ -23,6 +23,9 @@
 #pop-corn {
   font-size: 35px;
   margin-left: 45px;
+    @media (max-width: 480px) {
+      margin-left: 35px;
+    }
     a{
     text-decoration: none;
     }
@@ -31,3 +34,25 @@
 .lighter {
   font-weight: lighter;
 }
+
+.nav-bar-links {
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: lighter;
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+

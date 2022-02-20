@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
 
-    <div class="col-md-4">
+    <div class="col-1 col-md-4">
     </div>
 
     <div class="col col-md-4 mt-5">
@@ -9,12 +9,12 @@
 
       <%= simple_form_for [@list] do |f| %>
       <%= f.input :name %>
-      <%= f.button :submit, "Finished", class: "btn btn-primary mt-3" %>
+      <%= f.button :submit, "Finished", class: "btn btn-primary mt-3 mb-1" %>
       <% end %>
       <%= link_to "cancel", lists_path, class: "btn kill-link kill-decoration", id: "cancel-form" %>
     </div>
 
-     <div class="col-md-4">
+     <div class="col-1 col-md-4">
      </div>
 
   </div>

@@ -39,3 +39,8 @@
 .shrink {
   flex-shrink: 1;
 }
+
+.end {
+  display: flex;
+  justify-content: flex-end;
+}
