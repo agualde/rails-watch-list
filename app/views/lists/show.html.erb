@@ -41,7 +41,7 @@
                 </div>
                 <div class="card-bottom-right">
                   <h2 class="card-trip-pricing mt-2"><%= '⭐' * bookmark.movie.rating.to_i.round  %> </h2>
-                  <%= link_to "Delete", bookmark_path(bookmark.id), method: :delete, style: "color: red;",class: "mt-2 text-small kill-decoration" %>
+                  <%= button_to "Delete", bookmark_path(bookmark.id), method: :delete, style: "color: red;",class: "mt-2 text-small kill-decoration ew" %>
                 </div>
             </div>
           </div>
