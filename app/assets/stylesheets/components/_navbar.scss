@@ -56,3 +56,14 @@
   }
 }
 
+.mobile-padding {
+  @media (max-width: 480px) {
+    padding: 0;
+    }
+
+  .mobile-padding-end {
+    @media (max-width: 480px) {
+      padding-left: 0;
+    }
+  }
+}
