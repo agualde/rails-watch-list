@@ -10,3 +10,14 @@
   <div class="col-1 col-md-4">
   </div>
   </div>
+
+
+
+
+ <div class="btn-wrap">
+    <h3 class="btn btn-warning banner-btn-kill lighter counter">
+      <%=@list.movies.count%> <%=@list.movies.count == 1 ?  'movie' : 'movies' %>
+    </h3>
+  </div>
+
+  <h1 style="height: 700px;"><%= @list.name.capitalize %></h1>

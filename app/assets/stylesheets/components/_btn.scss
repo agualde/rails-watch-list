@@ -22,12 +22,15 @@ margin-right: 45px;
 
   @media (max-width: 480px) {
     margin-right: 0px;
+    font-size: 9px;
   }
 
 }
 
 .back-btn {
   margin-left: 45px;
+  align-self: center;
+
   @media (max-width: 480px) {
     margin-left: 0px;
   }
